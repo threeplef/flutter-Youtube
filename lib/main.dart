@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:youtube_screen/kakao_t/kakao_main_screen.dart';
 import 'package:youtube_screen/youtube_list_screen.dart';
 
 void main() {
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const KaKaoMainScreen(),
+      home: const YoutubeListScreen(),
     );
   }
 }
