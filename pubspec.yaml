@@ -64,6 +64,8 @@ flutter:
     - assets/minpli.png
     - assets/playlist5.png
     - assets/mod.png
+    - assets/playlist6.png
+    - assets/mingu.png
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
