@@ -8,7 +8,9 @@ class Playlist extends StatelessWidget {
   final String nameImage;
   final String name;
 
-  const Playlist(this.playImage, this.playlistName, this.views, this.nameImage, this.name, {Key? key})
+  const Playlist(
+      this.playImage, this.playlistName, this.views, this.nameImage, this.name,
+      {Key? key})
       : super(key: key);
 
   @override
@@ -27,13 +29,16 @@ class Playlist extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Image.asset(
-                playImage,
-                width: 200,
-                height: 100,
+              Padding(
+                padding: const EdgeInsets.fromLTRB(7, 0, 7, 0),
+                child: Image.asset(
+                  playImage,
+                  width: 200,
+                  height: 100,
+                  fit: BoxFit.cover,
+                ),
               ),
-              Container(
-                width: 183,
+              Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
