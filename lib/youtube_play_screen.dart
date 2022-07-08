@@ -7,8 +7,7 @@ class YoutubePlayScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: ListView(
         children: [
           Padding(
             padding: const EdgeInsets.fromLTRB(0, 25, 0, 0),
@@ -163,16 +162,15 @@ class YoutubePlayScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const Padding(
-                      padding: EdgeInsets.fromLTRB(168, 0, 0, 0),
-                      child: Text(
-                        '구독',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.red,
-                        ),
+                    Expanded(child: Container()),
+                    const Text(
+                      '구독',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.red,
                       ),
                     ),
+                    const SizedBox(width: 12,),
                   ],
                 ),
               ),
