@@ -50,9 +50,8 @@ class _MyHomePageState extends State<MyHomePage> {
           color: Colors.amber,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text('Hello World'),
-              Text('Hello World'),
+            children: const [
+              Text('text'),
             ],
           ),
         ),
