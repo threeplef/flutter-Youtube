@@ -21,9 +21,12 @@ class Playlist extends StatelessWidget {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => YoutubePlayScreen()),
+            MaterialPageRoute(builder: (context) => const YoutubePlayScreen()),
           );
         },
+        style: ElevatedButton.styleFrom(
+          primary: Colors.black,
+        ),
         child: FractionallySizedBox(
           widthFactor: 1.1,
           child: Row(
@@ -45,14 +48,14 @@ class Playlist extends StatelessWidget {
                     Text(
                       playlistName,
                       maxLines: 2,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 15,
                         color: Colors.white,
                       ),
                     ),
                     Text(
                       views,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 12,
                         color: Colors.grey,
                       ),
@@ -69,7 +72,7 @@ class Playlist extends StatelessWidget {
                           ),
                           Text(
                             name,
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 12,
                               color: Colors.grey,
                             ),
@@ -82,9 +85,6 @@ class Playlist extends StatelessWidget {
               ),
             ],
           ),
-        ),
-        style: ElevatedButton.styleFrom(
-          primary: Colors.black,
         ),
       ),
     );

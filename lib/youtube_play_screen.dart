@@ -21,9 +21,9 @@ class YoutubePlayScreen extends StatelessWidget {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const [
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(10, 10, 0, 3),
+                    padding: EdgeInsets.fromLTRB(10, 10, 0, 3),
                     child: Text(
                       'Playlist 벌써 여름이야, 시원하고 청량한 음악 담아왔어',
                       style: TextStyle(
@@ -41,7 +41,7 @@ class YoutubePlayScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.fromLTRB(10, 0, 0, 5),
                 child: Row(
-                  children: [
+                  children: const [
                     Text(
                       '조회수 26만회 · 11일 전',
                       style: TextStyle(
@@ -63,7 +63,7 @@ class YoutubePlayScreen extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(0, 10, 0, 5),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
+                  children: const [
                     Icon(
                       Icons.thumb_up_alt_outlined,
                       color: Colors.white70,
@@ -96,7 +96,7 @@ class YoutubePlayScreen extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(0, 0, 0, 5),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
+                  children: const [
                     Text(
                       '5.1',
                       style: TextStyle(
@@ -130,7 +130,7 @@ class YoutubePlayScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              Divider(
+              const Divider(
                 thickness: 0.5,
                 color: Colors.white54,
               ),
@@ -146,7 +146,7 @@ class YoutubePlayScreen extends StatelessWidget {
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: const [
                         Text(
                           '    떼껄룩 Take a look',
                           style: TextStyle(
@@ -163,8 +163,8 @@ class YoutubePlayScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(168, 0, 0, 0),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(168, 0, 0, 0),
                       child: Text(
                         '구독',
                         style: TextStyle(
@@ -176,7 +176,7 @@ class YoutubePlayScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              Divider(
+              const Divider(
                 thickness: 0.5,
                 color: Colors.white38,
               ),
@@ -186,7 +186,7 @@ class YoutubePlayScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Row(
-                      children: [
+                      children: const [
                         Text(
                           '댓글',
                           style: TextStyle(
@@ -203,7 +203,7 @@ class YoutubePlayScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Icon(
+                    const Icon(
                       Icons.keyboard_arrow_down,
                       color: Colors.white38,
                     ),
@@ -220,14 +220,14 @@ class YoutubePlayScreen extends StatelessWidget {
                         width: 25,
                       ),
                     ),
-                    Text(
+                    const Text(
                       '  몽땅 M.O.D',
                       style: TextStyle(
                         fontSize: 13,
                         color: Colors.grey,
                       ),
                     ),
-                    Text(
+                    const Text(
                       '  여름엔 꼭 청량 플리 들어줘야 함,, ㅠㅠ',
                       style: TextStyle(
                         fontSize: 13,
@@ -239,7 +239,7 @@ class YoutubePlayScreen extends StatelessWidget {
               ),
             ],
           ),
-          Divider(
+          const Divider(
             thickness: 7.0,
             color: Colors.white12,
           ),

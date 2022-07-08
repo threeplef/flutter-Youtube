@@ -62,20 +62,20 @@ class YoutubeListScreen extends StatelessWidget {
           ),
         ),
         titleSpacing: 0,
-        title: Text('YouTube'),
+        title: const Text('YouTube'),
         actions: [
           IconButton(
-            icon: Icon(Icons.ondemand_video),
+            icon: const Icon(Icons.ondemand_video),
             onPressed: () {},
             color: Colors.white,
           ),
           IconButton(
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
             onPressed: () {},
             color: Colors.white,
           ),
           IconButton(
-            icon: Icon(Icons.menu_sharp),
+            icon: const Icon(Icons.menu_sharp),
             onPressed: () {},
             color: Colors.white,
           ),
@@ -89,7 +89,7 @@ class YoutubeListScreen extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => YoutubePlayScreen()),
+                MaterialPageRoute(builder: (context) => const YoutubePlayScreen()),
               );
             },
             child: Playlist(playImage[index], playlistName[index], views[index],
