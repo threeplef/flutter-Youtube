@@ -70,6 +70,7 @@ class Playlist extends StatelessWidget {
                               width: 20,
                             ),
                           ),
+                          const SizedBox(width: 7),
                           Text(
                             name,
                             style: const TextStyle(
